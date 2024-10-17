@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.hero{
+  width: 100%;
+  background-image: url(./images/hero_backround.png);
+  height: 750px;
+  background-size: cover;
+  
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    height: 91px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav_left{
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    align-items: center;
+}
+
+.nav_left h3{
+    font-size: 1.6vw;
+}
+
+.nav_list{
+    margin-left: 5vw;
+
+}
+
+.nav_list a{
+    text-decoration: none;
+    color: rgba(115, 115, 115, 1);
+    padding: 0px 10px;
+    font-size: 1vw;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+}
+
+.nav_button{
+    margin-right: 5vw;
+}
+.nav_button a{
+    padding: 0px 30px;
+    text-decoration: none;
+    color: rgba(150, 187, 124, 1);
+    font-weight: 500;
+     
+    font-size: 1.1vw;
+    font-family: "Montserrat", sans-serif;
+}
+
+.nav_button button{
+    padding: 0.8vw 1.5vw;
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(150, 187, 124, 1);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+.nav_button button i{
+    margin-left: 10px;
+}
+ 
+
+.left{
+
+    width: 50%;
+    height: 500px;
+    font-family: "Montserrat", sans-serif;
+    margin-left: 153px;
+    margin-top: 148px;
+
+}
+
+.left h1{
+    font-weight: 700;
+    line-height: 60px;
+    font-size: 53px;
+}
+
+.left p{
+    color: rgba(115, 115, 115, 1);
+    margin-top: 25px;
+    line-height: 32px;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.hero_buttons{
+    margin-top: 18px;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+.Button_1{
+    padding: 12px 21px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(150, 187, 124, 1);
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+
+.Button_2{
+    padding: 12px 21px;
+    border: 1px solid rgba(150, 187, 124, 1);
+    border-radius: 5px;
+    color: rgba(150, 187, 124, 1);
+    margin-left: 10px;
+    background-color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+.hero_main{
+    display: flex;
+
+    
+}
+
+.right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-right: 20px;
+
+}
+
+.right_img {
+    width: 650px;
+}
+
+.right_img img{
+    width: 100%;
+}
+
+/* populer courses */
+
+
+.popular-courses {
+    width: 100%;
+}
+
+.container {
+     margin: 112px 195px 120px 195px;
+}
+
+.advice {
+    color: #88C000;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+    font-size: 36px;
+    margin: 20px 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.description {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.courses {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: center;
+    gap: 30px;
+    margin-top: 110px;
+}
+
+.course-card {
+    background-color: white;
+    padding: 40px;
+    width: 240px;
+    height: 288px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.course-card img {
+    width: 72px;
+    height: 72px;
+    margin-bottom: 20px;
+}
+
+.course-card h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.course-card p {
+    font-size: 12px;
+    color: #999;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* quality education start */
+
+
+.quality-education {
+   padding: 160px 195px;
+    background-color: white;
+    height: 715px;
+}
+
+.container_qe{
+   display: flex;
+    gap: 20px;
+}
+
+.image-content{
+    width: 517px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-content img {
+    width: 100%;
+}
+
+.text-content {
+    text-align: left;
+}
+
+.text-content h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.text-content p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.learn-more {
+    color: #88C000;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+.learn-more::after {
+    content: ' ➔';
+}
+
+
