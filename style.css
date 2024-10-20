@@ -47,13 +47,19 @@ nav {
   font-family: "Montserrat", sans-serif;
 }
 
+.nav_left a:hover{
+    color: rgb(70, 70, 70);
+    font-size: 1.1vw ;
+    transition: 0.2s;
+}
+
 .nav_button {
   margin-right: 5vw;
 }
 .nav_button a {
   padding: 0px 30px;
   text-decoration: none;
-  color: rgba(150, 187, 124, 1);
+  color: rgb(106, 156, 70);
   font-weight: 500;
 
   font-size: 1.1vw;
@@ -64,12 +70,28 @@ nav {
   padding: 0.8vw 1.5vw;
   text-align: center;
   justify-content: center;
-  background-color: rgba(150, 187, 124, 1);
+  background-color: rgb(112, 169, 72);
   border-radius: 5px;
   border: none;
   color: white;
   font-family: "Montserrat", sans-serif;
 }
+
+
+.nav_button a:hover{
+    color: rgb(112, 151, 84);
+    font-size: 1.2vw ;
+    transition: 0.2s;
+}
+
+.nav_button button:hover{
+    background-color: rgb(79, 132, 41);
+ 
+    transition: 0.2s;
+}
+
+
+
 
 .nav_button button i {
   margin-left: 10px;
@@ -106,21 +128,39 @@ nav {
   padding: 12px 21px;
   border: none;
   border-radius: 5px;
-  background-color: rgba(150, 187, 124, 1);
+  background-color: rgb(108, 163, 69);
   color: white;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
 }
 
+
+.Button_1:hover{
+    background-color: rgb(255, 255, 255);
+    color: #76a933;
+    border: 1px solid #76a933;
+ 
+    transition: 0.2s;
+}
+
+
 .Button_2 {
   padding: 12px 23px;
-  border: 1px solid rgba(150, 187, 124, 1);
+  border: 1px solid rgb(116, 155, 88);
   border-radius: 5px;
   color: rgba(150, 187, 124, 1);
   margin-left: 10px;
   background-color: white;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
+}
+
+.Button_2:hover{
+    background-color: #76a933;
+    color:white;
+    border: 1px solid #76a933;
+ 
+    transition: 0.2s;
 }
 
 .hero_main {
@@ -278,6 +318,27 @@ nav {
   margin-left: 30px;
 }
 
+.course-card:hover{
+   
+    background-color: #76a933;
+    transition: 0.5s;
+
+}
+
+.course-card:hover h3{
+   
+    color: #ffffff;
+    transition: 0.2s;
+
+}
+
+.course-card:hover p{
+   
+    color: #ffffff;
+    transition: 0.2s;
+
+}
+
 .course-card img {
   width: 72px;
   height: 72px;
@@ -334,7 +395,13 @@ nav {
   }
 }
 
+
+
 /* quality education start */
+
+
+
+
 
 .quality-education {
   background-color: white;
@@ -344,7 +411,7 @@ nav {
   display: flex;
   margin: 0px 195px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   height: 500px;
 }
 
@@ -364,6 +431,14 @@ nav {
   width: 50%;
   padding-top: 50px;
   padding-left: 100px;
+}
+
+.red_line{
+    height: 7px;
+    width: 90px;
+    background-color: #E74040;
+    margin-bottom: 42px;
+    border-radius: 3px;
 }
 
 .text-content h2 {
@@ -416,6 +491,8 @@ nav {
     font-size: 14px;
   }
 
+  .red_line{display: none;}
+
 
 }
 
@@ -439,13 +516,13 @@ nav {
     .text-content p{
       font-size: 10px;
     }
-  
+    .red_line{display: none;}
   
   }
 
 
-
 /* approdable section start */
+
 
 .approdable-packages {
   display: flex;
@@ -484,14 +561,16 @@ nav {
 .video-thumbnail {
   width: 400px;
   height: 263px;
-  border-radius: 10px;
+  border-radius: 100px;
 }
 
-.video-thumbnail img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+.video-thumbnail iframe{
+   
+    border-radius: 10px;
+  }
+  
+
+
 
 @media (max-width:769px) {
     
@@ -589,6 +668,35 @@ nav {
   background-position: center;
   position: relative;
 }
+
+.logos{
+    display: flex;
+     bottom: 20px;
+     left: 27px;
+    z-index: 99;
+    position: absolute;
+ 
+}
+
+.logo_1{
+    height: 40px;
+    width: 40px;
+    border-radius: 500px;
+    background-color: white;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.logo_1:hover{
+    background-color:transparent;
+    border: 2px solid white;
+    transition: 0.3s;
+}
+
+
 
 .sale-badge {
   position: absolute;
@@ -1217,33 +1325,7 @@ footer {
 
 }
 
-@media (max-width:768px) {
 
-    footer {
-        margin:40px 30px;
-        color: #333;
-      }
-
-      .footer-column{
-        margin-top: 40px;
-        margin-left: 50px;
-      }
-
-      footer.footer_footer {
-        margin: 0px 100px;
-     
-      }
-
-      footer.footer_footer p {
-    
-        font-size: 12px;
-        color: #737373;
-      }
-
-
-      
-    
-}
 
 .footer-column h3 {
   font-size: 18px;
@@ -1293,7 +1375,31 @@ footer {
 
 /* Responsive design */
 
+@media (max-width:768px) {
 
+    footer {
+        margin:40px 30px;
+        color: #333;
+      }
+
+      .footer-column{
+        margin-top: 40px;
+        margin-left: 50px;
+      }
+
+      footer.footer_footer {
+        margin: 0px 100px;
+     
+      }
+
+      footer.footer_footer p {
+    
+        font-size: 12px;
+        color: #737373;
+      }
+
+    
+}
 
 @media (max-width: 480px) {
     footer {
@@ -1301,19 +1407,19 @@ footer {
       
     }
   
-    footer.footer_footer {
+    .footer_footer {
         margin: 0px 10px;
         padding-left: 0px;
      
       }
 
-      footer.footer_footer p {
+      .footer_footer p {
     
         font-size: 10px;
         color: #737373;
       }
 
-      footer.footer_footer.footer_icon i {
+      .footer_footer.footer_icon i {
         font-size: 15px;
        
       }
@@ -1322,8 +1428,12 @@ footer {
         margin-top: 30px;
         margin-left: 10px;
       }
+      #fc{
+        margin-left: 100px;
+        width: 100%;
+      }
 
-   
+
 
   }
 
@@ -1342,6 +1452,60 @@ footer {
 }
 
 .footer_icon i {
-  font-size: 25px;
+  font-size: 20px;
   margin-left: 20px;
 }
+
+
+
+@media (max-width: 786px) {
+   
+  
+    .footer_footer {
+        margin: 0px 160px;
+        padding-left: 0px;
+        width: 100%;
+     
+      }
+
+      .footer_footer p {
+    
+        font-size: 12px;
+        color: #737373;
+      }
+
+ 
+    
+        .footer_icon i{
+            display: none;
+          }
+    
+      }
+
+
+  
+
+@media (max-width: 480px) {
+   
+  
+    .footer_footer {
+        margin: 0px 70px;
+        padding-left: 0px;
+        width: 100%;
+     
+      }
+
+      .footer_footer p {
+    
+        font-size: 10px;
+        color: #737373;
+      }
+
+
+      .footer_icon i{
+        display: none;
+      }
+
+
+
+  }
