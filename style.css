@@ -187,6 +187,10 @@ nav {
 /* hero section reponsive */
 
 @media (max-width: 769px) {
+
+  .hero{
+    background: none;
+  }
   .nav_left h3 {
     font-size: 2vw;
   }
@@ -1387,16 +1391,7 @@ footer {
         margin-left: 50px;
       }
 
-      footer.footer_footer {
-        margin: 0px 100px;
-     
-      }
-
-      footer.footer_footer p {
-    
-        font-size: 12px;
-        color: #737373;
-      }
+ 
 
     
 }
@@ -1433,20 +1428,21 @@ footer {
         width: 100%;
       }
 
-
-
   }
 
 .footer_footer {
-  margin: 0px 195px;
+ 
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 74px;
+  padding: 0px 230px;
 }
+
 .footer_footer p {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
+
   font-size: 14px;
   color: #737373;
 }
@@ -1462,9 +1458,12 @@ footer {
    
   
     .footer_footer {
-        margin: 0px 160px;
-        padding-left: 0px;
+      
         width: 100%;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
      
       }
 
@@ -1472,9 +1471,9 @@ footer {
     
         font-size: 12px;
         color: #737373;
+       
+        
       }
-
- 
     
         .footer_icon i{
             display: none;
@@ -1489,7 +1488,6 @@ footer {
    
   
     .footer_footer {
-        margin: 0px 70px;
         padding-left: 0px;
         width: 100%;
      
