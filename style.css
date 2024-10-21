@@ -1403,7 +1403,6 @@ footer {
     }
   
     .footer_footer {
-        margin: 0px 10px;
         padding-left: 0px;
      
       }
@@ -1488,7 +1487,7 @@ footer {
    
   
     .footer_footer {
-        padding-left: 0px;
+        padding: 0px 0px;
         width: 100%;
      
       }
