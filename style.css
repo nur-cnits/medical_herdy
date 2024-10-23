@@ -172,12 +172,11 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 100px;
   margin-right: 20px;
 }
 
 .right_img {
-  width: 650px;
+  width: 100%;
 }
 
 .right_img img {
@@ -186,10 +185,42 @@ nav {
 
 /* hero section reponsive */
 
+
+@media (max-width: 933px) {
+
+  .left {
+    
+    margin-left: 100px;
+  
+  }
+
+  .left p {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .nav_left h3 {
+    font-size: 2vw;
+  }
+
+  .left h1 {
+    font-size: 40px;
+    line-height: 42px;
+  }
+
+  .right_img {
+    margin-top: -80px;
+  }
+
+
+}
+
+
 @media (max-width: 769px) {
 
   .hero{
     background: none;
+    padding: 0px 20px;
   }
   .nav_left h3 {
     font-size: 2vw;
@@ -232,8 +263,22 @@ nav {
 }
 
 @media (max-width: 480px) {
+
+  .hero_main {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: auto;
+  }
+
   .nav_left {
     margin-left: 20px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  
   }
   .nav_left h3 {
     font-size: 3vw;
@@ -246,10 +291,6 @@ nav {
     font-size: 12px;
   }
 
-  .hero_main {
-    flex-direction: column;
-    text-align: center;
-  }
 
   .left h1 {
     font-size: 30px;
@@ -271,6 +312,7 @@ nav {
     margin-left: 60px;
   }
 }
+
 
 /* populer courses */
 
@@ -420,7 +462,7 @@ nav {
 }
 
 .image-content {
-  width: 400px;
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -470,6 +512,15 @@ nav {
 
 .learn-more::after {
   content: " ➔";
+}
+
+
+@media (max-width: 933px) {
+  .container_qe {
+    margin: 0px 100px;
+  }
+
+
 }
 
 @media (max-width: 769px) {
@@ -533,12 +584,13 @@ nav {
   align-items: center;
   justify-content: space-between;
   background-color: white;
-  margin: 10px 195px 120px 165px;
+  margin: 10px 165px 120px 150px;
   height: 500px;
 }
 
 .text-content {
   max-width: 50%;
+  padding: 0px;
 }
 
 .text-content h2 {
@@ -563,15 +615,47 @@ nav {
 }
 
 .video-thumbnail {
-  width: 400px;
-  height: 263px;
+  width: 50%;
+  height: 253px;
   border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+}
+
+.add_video{
+  width: 400px;
+  height: 243px;
 }
 
 .video-thumbnail iframe{
    
     border-radius: 10px;
   }
+
+
+
+  @media (max-width:935px) {
+    
+
+    .approdable-packages {
+      margin: 10px 100px 12px 100px;
+        margin-bottom: 50px;
+       
+      }
+
+      .video-thumbnail{
+        width: 300px;
+        
+      }
+      iframe{
+        height: 200px;
+        margin-top: 30px;
+      }
+
+
+}
   
 
 
@@ -604,6 +688,7 @@ nav {
     .approdable-packages {
         margin: 0px 30px;
         flex-direction: column;
+        text-align: center;
        
       }
 
@@ -615,6 +700,20 @@ nav {
         height: 200px;
         margin-top: 30px;
       }
+
+      .text-content {
+      
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      }
+  
+      .video-thumbnail{
+     margin-left: -0px;
+        
+      }
+
 
 
 }
@@ -1402,28 +1501,14 @@ footer {
       
     }
   
-    .footer_footer {
-        padding-left: 0px;
-     
-      }
 
-      .footer_footer p {
-    
-        font-size: 10px;
-        color: #737373;
-      }
-
-      .footer_footer.footer_icon i {
-        font-size: 15px;
-       
-      }
 
       .footer-column{
         margin-top: 30px;
         margin-left: 10px;
       }
       #fc{
-        margin-left: 100px;
+        margin-left: 75px;
         width: 100%;
       }
 
